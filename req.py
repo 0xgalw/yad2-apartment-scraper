@@ -18,15 +18,16 @@ user_agents = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.3"
 ]
 
-user_agent = random.choice(user_agents)
-
+# user_agent = random.choice(user_agents)
+# user_agent =
+ 
 def get_response(url, params) -> requests.Response:
     session = requests.Session()
     user_agent = random.choice(user_agents)
-    headers = {'User-Agent': user_agent}
+    # headers = {'User-Agent': user_agent}
 
-    # return session.get(url, params=params)
-    return session.get(url, params=params, headers=headers)
+    return session.get(url, params=params)
+    # return session.get(url, params=params, headers=headers)
 
 
 def parse_response(response_text: str) -> Optional[List[AdData]]:
