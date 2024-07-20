@@ -3,7 +3,7 @@ import json
 from typing import List, Optional
 from ad_data import AdData
 import random
-import datetime
+from datetime import datetime
 
 #Set a random user agent for the request ou of a lis of 10 popular user agents
 user_agents = [
@@ -45,5 +45,5 @@ def parse_response(response_text: str) -> Optional[List[AdData]]:
     ads = [AdData.from_dict(item) for item in feed_items]
     # Sort ads by ads.date_added (most recent first)
     ads.sort(key=lambda ad: datetime.strptime(ad.date_added, '%d/%m/%Y'), reverse=True)
-    return 
+    return ads
 
