@@ -7,7 +7,7 @@ def get_token():
     
 def send_message(message):
     bot_token = get_token()
-    chat_id = "@MyYad2testingBot"
+    chat_id = "-4213569051"
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
     payload = {
         'chat_id': chat_id,
