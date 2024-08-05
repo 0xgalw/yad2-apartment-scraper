@@ -24,8 +24,8 @@ URL = "https://www.yad2.co.il/api/feed/get"
 params = {
 "cat": 2,
 "subcat": 2,
-"rooms": "3-4",
-"price": "6000-9000",
+"rooms": "4-5",
+"price": "8000-13000",
 "z": 13,
 "center_point[]": f"{CENTER_POINT[0]},{CENTER_POINT[1]}",
 "distance[]": 1305,
